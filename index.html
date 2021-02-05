@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src='js/main.js'></script>
+    <script src='js/jquery.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"
+        integrity="sha512-pafh0hrrT9ZPZl/jx0cwyp7N2+ozgQf+YK94jSupHHLD2lcEYTLxEju4mW/2sbn4qFEfxJGZyIX/yJiQvgglpw=="
+        crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='css/main.css' />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!--Top navigation-->
+    <div class="topNav">
+        <ol class="nav">
+            <li class="navList"><a onclick="openNav()"><i class="fa fa-bars"></i></a></li>
+            <li class="navList"><a href="default.php"><i class="fas fa-home"></i>&nbsp;home</a></li>
+            <li class="navList"><a href="default.php"><i class="fas fa-phone-square-alt"></i>&nbsp;contact us</a></li>
+            <li class="navList"><a href="default.php"><i class="fas fa-truck-loading"></i>&nbsp;products</a></li>
+            <li class="navList"><a href="default.php"><i class="fas fa-shopping-basket"></i>&nbsp;checkout</a></li>
+            <li class="navList"><a href="default.php"><i class="fas fa-shopping-cart"></i>&nbsp;cart</a></li>
+
+        </ol>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="main"></div>
+
+    <!----SideBox-->
+
+    <!---<div class="sideBox">
+
+        <ul>
+            <li><a href="default.asp">Shoes</a></li>
+            <li><a href="default.asp">Jackets</a></li>
+            <li><a href="default.asp">Adults</a></li>
+            <li><a href="default.asp">Children</a></li>
+            <li><a href="default.asp">Shirts</a></li>
+
+
+        </ul>
+    </div>
+    --->
+
+    <!--Content box-->
+    <div class="container">
+        <!--left side-->
+        <div class="left-column">
+            <img data-image="black" src="images/black.png" alt="">
+            <img data-image="blue" src="images/blue.png" alt="">
+            <img data-image="red" class="active" src="images/red.png" alt="">
+        </div>
+
+        <!--right column-->
+        <div class="right-column">
+            <!--product-descriptoin-->
+            <div class="product-description">
+                <span>Headphones</span>
+                <h1>Beats EP</h1>
+                <p>the prefered choice of a vast range of acclaimed Djs punchy bass-focused sound and high isolation.
+                    Sturdy headband and on-ear cushions suitable for live perfomance</p>
+            </div>
+            <!--Product configuration-->
+            <div class="product-configuration">
+                <!--product-color-->
+                <div class="product-color">
+                    <span>Color</span>
+                    <div class="color-choose">
+                        <div>
+                            <input data-image="red" type="radio" class="red" name="color" value="red" checked>
+                            <label for="red"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="blue" type="radio" class="blue" name="color" value="blue">
+                            <label for="blue"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="black" type="radio" class="black" name="color" value="black">
+                            <label for="black"><span></span></label>
+                        </div>
+                    </div>
+                </div>
+                <!--cable configuration-->
+                <div class="cable-config">
+                    <span>Cable configuration</span>
+                    <div class="cable-choose">
+                        <button>straight</button>
+                        <button>coiled</button>
+                        <button>Long coiled</button>
+                    </div>
+                    <a href="#">how to configure your Headphones</a>
+                </div>
+            </div>
+            <!--product pricing-->
+            <div class="product-price">
+                <span>148$</span>
+                <a href="#" class="cart-btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
