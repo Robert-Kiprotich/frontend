@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Home
+  </title>
+  <i class="fas fa-globe-europe"></i>&nbsp;
+
+  <script src='js/jquery.js'></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"
+    integrity="sha512-pafh0hrrT9ZPZl/jx0cwyp7N2+ozgQf+YK94jSupHHLD2lcEYTLxEju4mW/2sbn4qFEfxJGZyIX/yJiQvgglpw=="
+    crossorigin="anonymous"></script>
+  <script src='js/main.js'></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <!--Top navigation-->
+  <div class="topNav">
+    <ol class="nav">
+      <li class="navList"><a onclick="openNav()"><i class="fa fa-bars"></i></a></li>
+      <li class="navList"><a href="default.php"><i class="fas fa-home"></i>&nbsp;home</a></li>
+      <li class="navList"><a href="default.php"><i class="fas fa-phone-square-alt"></i>&nbsp;contact us</a></li>
+      <li class="navList"><a href="default.php"><i class="fas fa-truck-loading"></i>&nbsp;products</a></li>
+      <li class="navList"><a href="default.php"><i class="fas fa-shopping-basket"></i>&nbsp;checkout</a></li>
+      <li class="navList"><a href="default.php"><i class="fas fa-shopping-cart"></i>&nbsp;cart</a></li>
+    </ol>
+  </div>
+
+  <!--sideNav-->
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Use any element to open the sidenav -->
+
+  <div id="main"></div>
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div class="shopping-cart">
+    <!-- Title -->
+    <div class="title">
+      Shopping Bag
+    </div>
+
+    <!-- Product #1 -->
+    <div class="cart-item">
+      <div class="buttons">
+        <span class="delete-btn"><i class="fas fa-trash"></i></span>&nbsp;
+        <span class="like-btn">
+          <i class="fas fa-heart"></i>
+        </span>
+      </div>
+
+      <div class="image">
+        <img src="images/item-1.png" alt="" />
+      </div>
+
+      <div class="cart-description">
+        <span>Common Projects</span>
+        <span>Bball High</span>
+        <span>White</span>
+      </div>
+      <div class="cart-quantity">
+        <button class="plus-btn" type="button" name="button" active="true">
+          <img src="images/plus.svg" alt="" />
+        </button>
+        <input type="text" name="" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="images/minus.svg" alt="" />
+        </button>
+      </div>
+      <div class="total-price">$549</div>
+    </div>
+
+    <!-- Product #2 -->
+
+    <div class="cart-item">
+      <div class="buttons">
+        <span class="delete-btn"><i class="fas fa-trash"></i></span>&nbsp;
+        <span class="like-btn">
+          <i class="fas fa-heart"></i>
+        </span>
+      </div>
+
+      <div class="image">
+        <img src="images/item-1.png" alt="" />
+      </div>
+
+      <div class="cart-description">
+        <span>Common Projects</span>
+        <span>Bball High</span>
+        <span>White</span>
+      </div>
+      <div class="cart-quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="images/plus.svg" alt="" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="images/minus.svg" alt="" />
+        </button>
+      </div>
+      <div class="total-price">$549</div>
+    </div>
+
+  </div>
+
+
+  </footer>
+
+</body>
+
+</html>
