@@ -1,3 +1,9 @@
+<?php
+include('db.php');
+include('functions.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,8 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Home
+        
     </title>
-    <i class="fas fa-globe-europe"></i>&nbsp;
+
 
     <script src='js/jquery.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"
@@ -86,19 +93,8 @@
 
     <!--carousel-->
     <div class="gallery">
-        <div class="content">
-            <img class="product-1" src="images/shoes.png">
-            <h3>Shoes</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <h6>$100.00</h6>
-            <ul>
-                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-            </ul>
-            <button class="buy-4">Buy Now</button>
+        <?php getData();?> 
+      <!--  <div class="content">
         </div>
         <div class="content">
             <img class="product-1" src="images/earphone.png">
@@ -281,21 +277,7 @@
                 <li><i class="fa fa-star" aria-hidden="true"></i></li>
             </ul>
             <button class="buy-4">Buy Now</button>
-        </div>
-        <div class="content">
-            <img class="product-1" src="images/earphone.png">
-            <h3>Earphone</h3>
-            <p>Lorem ipsum dolor sit amet</p>
-            <h6>$40.00</h6>
-            <ul>
-                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-            </ul>
-            <button class="buy-4">Buy Now</button>
-        </div>
+        </div>-->
     </div>
 
     </div>

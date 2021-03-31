@@ -1,27 +1,23 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Home
-    </title>
-    <i class="fas fa-globe-europe"></i>&nbsp;
-
-    <script src='../js/jquery.js'></script>
+    <title>Home</title>
+    <script src='js/main.js'></script>
+    <script src='js/jquery.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"
         integrity="sha512-pafh0hrrT9ZPZl/jx0cwyp7N2+ozgQf+YK94jSupHHLD2lcEYTLxEju4mW/2sbn4qFEfxJGZyIX/yJiQvgglpw=="
         crossorigin="anonymous"></script>
-    <script src='../js/main.js'></script>
-    <script type="text/javascript" src="../js/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel='stylesheet' href='css/main.css' />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
@@ -34,10 +30,9 @@
             <li class="navList"><a href="default.php"><i class="fas fa-truck-loading"></i>&nbsp;products</a></li>
             <li class="navList"><a href="default.php"><i class="fas fa-shopping-basket"></i>&nbsp;checkout</a></li>
             <li class="navList"><a href="default.php"><i class="fas fa-shopping-cart"></i>&nbsp;cart</a></li>
+
         </ol>
     </div>
-
-    <!--sideNav-->
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -46,37 +41,41 @@
         <a href="#">Clients</a>
         <a href="#">Contact</a>
     </div>
-
-    <!-- Use any element to open the sidenav -->
-
     <div id="main"></div>
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-    <!--slider-->
+<div class="uploads">
+<form action="functions.php" method="post">
+  <div class="form-group">
+    <label for="">id number</label>
+    <input type="number" class="form-control"  name="id" id="id"   placeholder="Enter id">
+  </div>
+  <div class="form-group">
+    <label for="">name</label>
+    <input type="text" class="form-control" name="name" id="name"  placeholder="Enter name">
+  </div>
+  <div class="form-group">
+    <label for="">description</label>
+    <input type="text" class="form-control" name="description" id="description"  placeholder="Enter desc">
+  </div>
+  <div class="form-group">
+    <label for="">image</label>
+    <input type="file" class="form-control" name="image" id="img"  value="upload">
+  </div>
 
-    <div class="search">
-        <input type="text" placeholder="Search pages..">
-        <a href=""><i class="fas fa-search"></i>&nbsp;
-            hello admin
-        </a>
-        <a href="#"> <i class="fas fa-user"></i></a>&nbsp;
-    </div>
-    <!--admin services-->
-    <div class="services">
-        <div class="users">
-            <button type="submit" class="ad-button">user list</button>
-
-        </div>
-        <div class="uploads">
-            <button type="submit" class="ad-button"> product list</button>
-        </div>
-        <div class="store">
-            <button type="submit" class="ad-button"> store list</button>
-        </div>
-        <br>
-        <div class="delivery">
-            Track goods
-        </div>
+  <div class="form-group">
+    <label for="">price</label>
+    <input type="text" class="form-control" name="price" id="price"  placeholder="Enter price">
+  </div>-->
+  <button type="submit" name="submit" class="btn ">Submit here</button>
+</form>
+</div>
     </div>
 </body>
 
 </html>
+
+
+
+
+
+
+
