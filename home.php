@@ -12,10 +12,7 @@ include('functions.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Home
-        
     </title>
-
-
     <script src='js/jquery.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"
         integrity="sha512-pafh0hrrT9ZPZl/jx0cwyp7N2+ozgQf+YK94jSupHHLD2lcEYTLxEju4mW/2sbn4qFEfxJGZyIX/yJiQvgglpw=="

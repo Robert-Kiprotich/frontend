@@ -51,12 +51,13 @@ html,body{
 
 }
 
-.container{
+/*.container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
     display: flex;
 }
+*/
 
 .left-column{
     width: 65%;
@@ -670,13 +671,7 @@ margin-right: 10px;
 
 /*checkout page*/
 
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  margin: 0 -16px;
-}
+
 
 .col-25 {
   -ms-flex: 25%; /* IE10 */
@@ -756,3 +751,5 @@ span.price {
   }
 }
   
+/*ulods*/
+

@@ -7,14 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <script src='js/main.js'></script>
-    <script src='js/jquery.js'></script>
+    <script src='../js/main.js'></script>
+    <script src='../js/jquery.js'></script>
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"
         integrity="sha512-pafh0hrrT9ZPZl/jx0cwyp7N2+ozgQf+YK94jSupHHLD2lcEYTLxEju4mW/2sbn4qFEfxJGZyIX/yJiQvgglpw=="
         crossorigin="anonymous"></script>
-    <link rel='stylesheet' href='css/main.css' />
+    <link rel='stylesheet' href='../css/main.css' />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -42,9 +42,11 @@
         <a href="#">Contact</a>
     </div>
     <div id="main"></div>
-<div class="uploads">
-<form action="functions.php" method="post">
-  <div class="form-group">
+<div class="container">
+  <div class="row text-center">
+  <div class="col ">
+<form action="../functions.php" method="post" enctype="multipart/form-data">
+  <div class="form-label-group">
     <label for="">id number</label>
     <input type="number" class="form-control"  name="id" id="id"   placeholder="Enter id">
   </div>
@@ -58,15 +60,19 @@
   </div>
   <div class="form-group">
     <label for="">image</label>
-    <input type="file" class="form-control" name="image" id="img"  value="upload">
+    <input type="file" class="form-control" name="image" id="img"  value="upload"   />
   </div>
 
   <div class="form-group">
     <label for="">price</label>
     <input type="text" class="form-control" name="price" id="price"  placeholder="Enter price">
-  </div>-->
-  <button type="submit" name="submit" class="btn ">Submit here</button>
+  </div>
+ <a href="home.php">
+   <button type="submit" class="buy-4" name="submit">Submit</button>
+  </a>
 </form>
+</div>
+</div>
 </div>
     </div>
 </body>
